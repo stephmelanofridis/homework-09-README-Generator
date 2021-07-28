@@ -110,6 +110,23 @@ inquirer.prompt([
             } else {
                 return "Please select a license to continue. "
             }
+        },
+        filter: (input) => {
+            if (input == "Apache License 2.0") {
+                return input + " [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+            } else if (input == "MIT License") {
+                return input + " [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+            } else if (input == "Creative Commons License") {
+                return input + " [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)"
+            } else if (input == "GNU General Public License v2.0") {
+                return input + " [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
+            } else if (input == "Mozilla Public License") {
+                return input + " [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+            } else if (input == "The Unilicense") {
+                return input + " [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+            } else {
+                return "You have chosen not to include a license. "
+            }
         }
     },
     {
