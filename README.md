@@ -1,8 +1,8 @@
 
-# Quality README Generator
+# Project
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-A program using Node JS and the inquirer package that can ask questions and generate a quality README from the answers
+Description
 
 ## Table of Contents
 
@@ -15,17 +15,17 @@ A program using Node JS and the inquirer package that can ask questions and gene
 
 ## Installation
 
-Answer the questions asked and a quality readme will be created
+Install
 
 ## Usage
 
-Answer the questions
+Usage
 
 ## License
 
 Apache License 2.0
 
-Copyright 2021 Steph Melanofridis
+Copyright 2021 Steph P
             
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -41,19 +41,19 @@ Copyright 2021 Steph Melanofridis
 
 ## Contributions
 
-Anyone can contribute
+Guidelines
 
 ## Tests 
 
-Test in node terminal
+Test
 
 ## Questions
 
-GitHub Username: stephmelanofridis
-GitHub URL: github
-Email: steph@email.com
+GitHub Username: Username
+GitHub URL: Github
+Email: Email
     
-Email me at anytime
+Questions
 
-- [Back to top] (#Table-of-Contents) 
+- [Back to Top](#Table-of-contents) 
     
