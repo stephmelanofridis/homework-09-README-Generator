@@ -29,7 +29,7 @@ const generateREADME = (answers) =>
 
     ## License
 
-    ${generateDescription(answers.license)}
+    ${generateDescription(answers.license.answers)}
 
     ## Contributions
 
@@ -51,23 +51,23 @@ const generateREADME = (answers) =>
     `;
 
 const generateBadge = (license) => {
-    if (license.value == "Apache License 2.0") {
-        return license + " [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-    } else if (license.value == "MIT License") {
-        return license + " [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-    } else if (license.value == "GNU General Public License v2.0") {
-        return license + " [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
-    } else if (license.value == "Mozilla Public License") {
-        return license + " [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
-    } else if (license.value == "The Unilicense") {
-        return license + " [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+    if (license == "Apache License 2.0") {
+        return " [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    } else if (license == "MIT License") {
+        return " [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    } else if (license == "GNU General Public License v2.0") {
+        return " [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
+    } else if (license == "Mozilla Public License 2.0") {
+        return " [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+    } else if (license == "The Unilicense") {
+        return " [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
     } else {
         return " "
     }
 };
 
-const generateDescription = (license) => {
-    if (license.value == "Apache License 2.0") {
+const generateDescription = (license, answers) => {
+    if (license == "Apache License 2.0") {
         return license + `\n\nCopyright 2021 ${answers.name}
             
                 Licensed under the Apache License, Version 2.0 (the "License");
@@ -82,7 +82,7 @@ const generateDescription = (license) => {
                 See the License for the specific language governing permissions and
                 limitations under the License.`
 
-    } else if (license.value == "MIT License") {
+    } else if (license == "MIT License") {
         return license + `\n\nCopyright © 2021 ${answers.name}
                 
                 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -90,7 +90,7 @@ const generateDescription = (license) => {
                 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
                 
                 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
-    } else if (license.value == "GNU General Public License v2.0") {
+    } else if (license == "GNU General Public License v2.0") {
         return license + `\n\nCopyright © 2021 ${answers.name}
 
                 This library is free software; you can redistribute it and/or
@@ -108,7 +108,7 @@ const generateDescription = (license) => {
                 Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
                 Boston, MA  02110-1301, USA.`
 
-    } else if (license.value == "Mozilla Public License 2.0") {
+    } else if (license == "Mozilla Public License 2.0") {
         return license + `\n\nCopyright © 2021 ${answers.name}
                 
                 This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -116,7 +116,7 @@ const generateDescription = (license) => {
                 If it is not possible or desirable to put the notice in a particular file, then You may include the notice in a location (such as a LICENSE file in a relevant directory) where a recipient would be likely to look for such a notice.
                 
                 You may add additional accurate notices of copyright ownership.`
-    } else if (license.value == "The Unilicense") {
+    } else if (license == "The Unilicense") {
         return license + `\n\nCopyright © 2021 ${answers.name}
                 This is free and unencumbered software released into the public domain.
 
