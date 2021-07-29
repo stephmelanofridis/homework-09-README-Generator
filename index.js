@@ -5,12 +5,12 @@ const fs = require("fs");
 // README Content
 const generateREADME = (answers) =>
     `
-    # ${answers.title}
-    ${generateBadge(answers.license)}
+# ${answers.title}
+${generateBadge(answers.license)}
 
-    ${answers.description}
+${answers.description}
 
-    ## Table of Contents
+## Table of Contents
 
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -19,50 +19,50 @@ const generateREADME = (answers) =>
 - [Tests](#Tests)
 - [Questions](#Questions)
 
-    ## Installation
+## Installation
 
-    ${answers.installation}
+${answers.installation}
 
-    ## Usage
+## Usage
 
-    ${answers.usage}
+${answers.usage}
 
-    ## License
+## License
 
-    ${generateDescription(answers.license, answers)}
+${generateDescription(answers.license, answers)}
 
-    ## Contributions
+## Contributions
 
-    ${answers.contributions}
+${answers.contributions}
 
-    ## Tests 
+## Tests 
 
-    ${answers.tests}
+${answers.tests}
 
-    ## Questions
+## Questions
 
-    GitHub Username: ${answers.questions2}
-    GitHub URL: ${answers.questions1}
-    Email: ${answers.questions3}
+GitHub Username: ${answers.questions2}
+GitHub URL: ${answers.questions1}
+Email: ${answers.questions3}
     
-    ${answers.questions4}
+${answers.questions4}
 
 - [Back to top] (#Table-of-Contents) 
     `;
 // Function to take user input from license and create a badge
 const generateBadge = (license) => {
     if (license == "Apache License 2.0") {
-        return " [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+        return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
     } else if (license == "MIT License") {
-        return " [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
     } else if (license == "GNU General Public License v2.0") {
-        return " [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
+        return `[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`
     } else if (license == "Mozilla Public License 2.0") {
-        return " [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+        return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
     } else if (license == "The Unilicense") {
-        return " [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+        return ` [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
     } else {
-        return " "
+        return ` `
     }
 };
 
@@ -71,17 +71,17 @@ const generateDescription = (license, answers) => {
     if (license == "Apache License 2.0") {
         return license + `\n\nCopyright 2021 ${answers.name}
             
-                Licensed under the Apache License, Version 2.0 (the "License");
-                you may not use this file except in compliance with the License.
-                You may obtain a copy of the License at
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
                 
-                    http://www.apache.org/licenses/LICENSE-2.0
+        http://www.apache.org/licenses/LICENSE-2.0
                 
-                Unless required by applicable law or agreed to in writing, software
-                distributed under the License is distributed on an "AS IS" BASIS,
-                WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-                See the License for the specific language governing permissions and
-                limitations under the License.`
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.`
 
     } else if (license == "MIT License") {
         return license + `\n\nCopyright © 2021 ${answers.name}
