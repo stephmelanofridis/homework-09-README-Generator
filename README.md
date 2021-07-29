@@ -6,12 +6,12 @@
 
     ## Table of Contents
 
-- [Installation] (#Installation)
-- [Usage] (#Usage)
-- [License] (#License)
-- [Contribution] (#Contribution)
-- [Tests] (#Tests)
-- [Questions] (#Questions)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contribution](#Contribution)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
     ## Installation
 
@@ -19,13 +19,13 @@
 
     ## Usage
 
-    Answer the questions to generate your README
+    Answer the questions to generate your own README file
 
     ## License
 
     Apache License 2.0
 
-Copyright 2021 Steph
+Copyright 2021 Steph Melanofridis
             
                 Licensed under the Apache License, Version 2.0 (the "License");
                 you may not use this file except in compliance with the License.

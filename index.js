@@ -12,12 +12,12 @@ const generateREADME = (answers) =>
 
     ## Table of Contents
 
-- [Installation] (#Installation)
-- [Usage] (#Usage)
-- [License] (#License)
-- [Contribution] (#Contribution)
-- [Tests] (#Tests)
-- [Questions] (#Questions)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contribution](#Contribution)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
     ## Installation
 
@@ -49,7 +49,7 @@ const generateREADME = (answers) =>
 
 - [Back to top] (#Table-of-Contents) 
     `;
-
+// Function to take user input from license and create a badge
 const generateBadge = (license) => {
     if (license == "Apache License 2.0") {
         return " [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
@@ -66,6 +66,7 @@ const generateBadge = (license) => {
     }
 };
 
+// Function to take user input from license and insert a description into license section
 const generateDescription = (license, answers) => {
     if (license == "Apache License 2.0") {
         return license + `\n\nCopyright 2021 ${answers.name}
@@ -147,6 +148,7 @@ const generateDescription = (license, answers) => {
     }
 }
 
+// Questions the user will be asked when they first run the program
 inquirer.prompt([
     {
         type: "input",
@@ -295,9 +297,9 @@ inquirer.prompt([
     },
 ])
 
+    // Take the users input and create the README file
     .then((answers) => {
         const readmePageContent = generateREADME(answers);
-
         fs.writeFile("README.md", readmePageContent, (err) =>
             err ? console.log(err) : console.log("Successfully created README file for your project! ")
         );
