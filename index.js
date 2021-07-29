@@ -29,7 +29,7 @@ const generateREADME = (answers) =>
 
     ## License
 
-    ${generateDescription(answers.license.answers)}
+    ${generateDescription(answers.license, answers)}
 
     ## Contributions
 
