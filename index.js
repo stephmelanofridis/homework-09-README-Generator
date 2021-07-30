@@ -41,9 +41,9 @@ ${answers.tests}
 
 ## Questions
 
-GitHub Username: ${answers.questions2}
-GitHub URL: ${answers.questions1}
-Email: ${answers.questions3}
+* GitHub Username: ${answers.questions2}
+* GitHub URL: ${answers.questions1}
+* Email: ${answers.questions3}
     
 ${answers.questions4}
 
