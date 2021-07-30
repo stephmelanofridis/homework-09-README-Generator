@@ -43,9 +43,9 @@ I have tested this project using the terminal and running node index.js
 
 ## Questions
 
-GitHub Username: stephmelanofridis
-GitHub URL: https://github.com/stephmelanofridis
-Email: stephmelanofridis@bigpond.com
+* GitHub Username: stephmelanofridis
+* GitHub URL: https://github.com/stephmelanofridis
+* Email: stephmelanofridis@bigpond.com
     
 Please feel free to email me at any time if you have any questions or concerns regarding this project.
 
