@@ -12,12 +12,12 @@ ${answers.description}
 
 ## Table of Contents
 
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contribution](#Contribution)
-- [Tests](#Tests)
-- [Questions](#Questions)
+* [Installation](#installation)
+- [Usage](#usage)
+* [License](##License)
+* [Contribution](##Contribution)
+* [Tests](##Tests)
+* [Questions](##Questions)
 
 ## Installation
 
@@ -47,7 +47,7 @@ ${answers.tests}
     
 ${answers.questions4}
 
-- [Back to Top](#Table-of-contents) 
+* [Back to Top](#Table-of-contents) 
     `;
 // Function to take user input from license and create a badge
 const generateBadge = (license) => {
