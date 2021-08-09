@@ -15,7 +15,7 @@ ${answers.description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contribution](#contribution)
+- [Contributions](#contributions)
 - [Tests](#tests)
 - [Questions](#questions)
 

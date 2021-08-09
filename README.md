@@ -9,7 +9,7 @@ A command-line application that will ask the user a series of questions to creat
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contribution](#contribution)
+- [Contributions](#contributions)
 - [Tests](#tests)
 - [Questions](#questions)
 
